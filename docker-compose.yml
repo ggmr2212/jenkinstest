@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+
+  gateway:
+    image: bancoganadero/gwapi
+    ports:
+      - 8080:8080
+    networks:
+      - payments-service-net
+  
+  tigo:
+    image: bancoganadero/tigoapi
+    ports:
+      - 3001:3001
+    networks:
+      - payments-service-net
+
+networks:
+  payments-service-net:
+    external: false

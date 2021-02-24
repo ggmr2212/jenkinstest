@@ -1,0 +1,13 @@
+{
+  "name": "tigo-service",
+  "version": "1.0.0",
+  "description": "Payments Gateway",
+  "author": "jhtrigo@bg.com.bo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "restana": "^4.8.1"
+  }
+}
